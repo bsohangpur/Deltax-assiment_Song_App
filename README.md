@@ -1,7 +1,7 @@
 
 # Song App
 
-This App is created by @bsohangpur, in this project at home page you find top 10 songs sorted as latest as you add and you can add reviews by click on add reviews button. On Add Song page you find all CURD opration were you Create, update and delete the songs.
+This App is created by @bsohangpur, in this project at home page you find top 10 songs sorted as latest as you add and you can add reviews by click on add reviews button. On Add Song page you find all CURD operation were you Create, update, read and delete the songs.
 as same on Add Artist page.
 
 
@@ -39,21 +39,21 @@ Here are all detail about project.
 For Back-End Tech we use 
 
 Node,
-Express,
-Mongoose for easy connect mongoDB to Express.
-Cors for cors policy.
-Multer for media uploads.
-Dotenv for environment variable.
+**Express.**
+**Mongoose for easy connect mongoDB to Express.**
+**Cors for cors policy.**
+**Multer for media uploads.**
+**Dotenv for environment variable.**
 
 
-For Front-End Tech be.
-React vite with Typescript.
-React-router-dom for routing.
-React-icons
-React-Redux for connecting React with Redux.
-Redux Toolkit instead of Redux that give more power of Redux with less code.
-React-hook-form for easy form handling form data.
-Axios instead of fetch which give more easy to handle fetching data from Api.
+For Front-End Tech.
+**React vite with Typescript.**
+**React-router-dom for routing.**
+**React-icons.**
+**React-Redux for connecting React with Redux.**
+**Redux Toolkit instead of Redux that give more power of Redux with less code.**
+**React-hook-form for easy form handling form data.**
+**Axios instead of fetch which give more easy to handle fetching data from Api.**
 
 DataBase 
 We use MongoDb which is more powerful and easy to handle data.
@@ -61,25 +61,25 @@ We use MongoDb which is more powerful and easy to handle data.
 Folder Structure.
 
 Back-End (Server folder name)
-Contained Config folder were all configuration files.
-Models were all Data base Schema present.
-Routes were all routes are presents.
-Uploads folder for all medias.
-App.js file for entry point to Api.
-Server.js file for runs servers.
-Package.json file were all detail about Api dependency are present. 
+**Config folder where all configuration files.**
+**Models where all Data base Schema present.**
+**Routes where all routes are presents.**
+**Uploads folder for all medias.**
+**App.js file for entry point to Api.**
+**Server.js file for runs servers.**
+**Package.json file where all detail about Api dependency are present.** 
 
 Front End (Client folder name)
-Src were all main file are present.
-Assets folder contain all static image file.
-Components contains Artist, EditArtist, EditSong, Songdetail, Songs files.
-Constant contain constant files.
-Page contain all pages.
-Redux were all redux file contain.
-App.tsx file contain all main routing code.
-Main.tsx file have main entry for react app.
-Index.html file contain main html temp.
-Package.json file were all detail about React App dependency are present. 
+**Src where all main file are present.**
+**Assets folder contain all static image file.**
+**Components contains Artist, EditArtist, EditSong, Songdetail, Songs files.**
+**Constant contain constant files.**
+**Page contain all pages.**
+**Redux where all redux file contain.**
+**App.tsx file contain all main routing code.**
+**Main.tsx file have main entry for react app.**
+**Index.html file contain main html temp.**
+**Package.json file where all detail about React App dependency are present.** 
 
 
 
@@ -90,6 +90,7 @@ Package.json file were all detail about React App dependency are present.
 - Fullscreen mode
 - Add Artist Form.
 - Home page with all top 10 songs List.
+- Search box for searching option on page. 
 
 
 ## Tech Stack
