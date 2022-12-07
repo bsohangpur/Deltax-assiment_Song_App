@@ -27,12 +27,60 @@ To create Express Api on this project run
 
 ## Documentation
 
-[Documentation](https://docs.google.com/document/d/1GornPDUi6_v42zj5jarBF9WL0lGVd_byo514D3pP8rE/edit?usp=sharing)
+[Documentation](https://scribehow.com/shared/Workflow__UyOSMbetQD-fkUpihlFquQ)
 
 
 ## Appendix
 
-All details Regarding to project are present in Documentation Link.
+All details Regarding to project are present. in Documentation Link.
+
+Here are all detail about project.
+
+For Back-End Tech we use 
+
+Node,
+Express,
+Mongoose for easy connect mongoDB to Express.
+Cors for cors policy.
+Multer for media uploads.
+Dotenv for environment variable.
+
+
+For Front-End Tech be.
+React vite with Typescript.
+React-router-dom for routing.
+React-icons
+React-Redux for connecting React with Redux.
+Redux Toolkit instead of Redux that give more power of Redux with less code.
+React-hook-form for easy form handling form data.
+Axios instead of fetch which give more easy to handle fetching data from Api.
+
+DataBase 
+We use MongoDb which is more powerful and easy to handle data.
+
+Folder Structure.
+
+Back-End (Server folder name)
+Contained Config folder were all configuration files.
+Models were all Data base Schema present.
+Routes were all routes are presents.
+Uploads folder for all medias.
+App.js file for entry point to Api.
+Server.js file for runs servers.
+Package.json file were all detail about Api dependency are present. 
+
+Front End (Client folder name)
+Src were all main file are present.
+Assets folder contain all static image file.
+Components contains Artist, EditArtist, EditSong, Songdetail, Songs files.
+Constant contain constant files.
+Page contain all pages.
+Redux were all redux file contain.
+App.tsx file contain all main routing code.
+Main.tsx file have main entry for react app.
+Index.html file contain main html temp.
+Package.json file were all detail about React App dependency are present. 
+
 
 
 ## Features
