@@ -16,15 +16,27 @@ const Home = () => {
   const [searchData, setSearchData] = useState("")
 
 
-  const getSearch = (e: any) => {
+  const getSearch = async (e: any) => {
     setSearch(e.target.value)
+    if (e.target.value.length >= 4){
+      const resData = await axios.post(url, {query:search})
+      setSearchData(resData.data.data)
+    }
+    else{
+      const emp:any = []
+      setSearchData(emp)
+    }
   }
 
-  const sendData = async () => {
-    const resData = await axios.post(url, {query:search})
-    setSearchData(resData.data.data)
+  const PageSend =(pageid:number)=>{
+    console.log(pageid)
   }
 
+  // const sendData = async () => {
+  //   const resData = await axios.post(url, {query:search})
+  //   setSearchData(resData.data.data)
+  // }
+  const btn = [1,2,3,4,5,6]
   if (status === "loading") {
     return (
       <div className="w-screen">
@@ -42,12 +54,23 @@ const Home = () => {
             <input onChange={getSearch} value={search} type="text" className='h-10 placeholder:capitalize' id="search-bar" placeholder="fing your song here..." />
             <button onClick={(e) => {
               e.preventDefault()
-              sendData()
+              // sendData()
             }}
               className='search_icons w-10 grid place-items-center h-10 absolute top-0 right-0 bg-slate-200'><AiOutlineSearch className=' text-lg' /></button>
           </form>
         </div>
         <SongDetail Search={searchData}/>
+        <div className="flex gap-6 justify-end mb-12 mr-12">
+        {
+          btn.map((ele, index:number)=>{
+            return(
+              <div key={index} className='w-6 h-6 rounded-sm shadow-md grid place-items-center'>
+                <button onClick={()=>{PageSend(ele)}}>{ele}</button>
+              </div>
+            )
+          })
+        }
+        </div>
         <div className="">
           <Footer />
         </div>
